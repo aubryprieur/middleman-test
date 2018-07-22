@@ -1,0 +1,20 @@
+---
+title: "Une équipe merveilleuse pour vous encadrer, vous divertir"
+title_seo: "L'équipe merveilleuse du No Wifi Summercamp dans les Pyrénées Ariégeoises"
+description: "Lors de votre séjour dans le camp de vacances, vous ferez la connaissance de notre équipe chargée de vous encadrer et de vous divertir."
+hero_image: equipe-saut.jpg
+---
+
+<div class="main">
+  <%= partial "partials/header" %>
+
+  <ul>
+    <% data.team.each do |member| %>
+      <li>
+        <h2><%= member.name %></h2>
+        <%= image_tag "/images/members/#{member.picture}" %>
+        <p>member.description</p>
+      </li>
+    <% end %>
+  </ul>
+</div>
