@@ -1,0 +1,22 @@
+site:
+  title: Gîte la Varenne, gîte de charme dans les Pyrénées Ariégeoises
+  description: "Maison de maître datant de la fin du 19è siècle mariant l'authenticité et la modernité."
+  url: "https://aubryprieur.github.io/middleman-test/"
+
+author:
+  name: Gîte la Varenne
+  address: Chemin de coudère 09420 Rimont
+  phone: 02 86 54 96 30
+  email: contact@lavarenne.fr
+
+social:
+  facebook: "https://facebook.com/lavarenne"
+  twitter: "https://twitter.com/lavarenne"
+
+copyright:
+  developer:
+    name: Aubry Prieur
+    url: "https://www.linkedin.com/in/aubry-prieur/"
+
+google_analytics:
+  tracking_code: "Your-tracking-code"
