@@ -1,0 +1,11 @@
+<div>
+  <ul>
+    <% gallery.each do |picture| %>
+      <li>
+        <% link_to "/images/galleries/#{picture}" do %>
+          <%= image_tag "/images/galleries/thumbs/#{picture}" %>
+        <% end %>
+      <% end %>
+    </li>
+  </ul>
+</div>

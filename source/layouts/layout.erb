@@ -5,13 +5,19 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="#{current_page.data.description}">
+    <meta name="robots" content="index,follow">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title %></title>
+    <title><%= current_page.data.title ? current_page.data.title : data.settings.site.title %></title>
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
   </head>
   <body>
+    <%= partial "layouts/navbar" %>
     <%= yield %>
+    <%= partial "layouts/gallery", locals: { gallery: data.galleries.homepage} %>
+    <%= partial "layouts/call-to-action" %>
+    <%= partial "layouts/footer" %>
   </body>
 </html>
