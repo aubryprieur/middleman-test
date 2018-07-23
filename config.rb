@@ -72,3 +72,7 @@ helpers do
     result.first
   end
 end
+
+activate :disqus do |d|
+  d.shortname = 'middleman-test' # Remplacer par votre nom Disqus
+end
