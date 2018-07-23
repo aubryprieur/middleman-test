@@ -1,10 +1,15 @@
+<%# Set the title %>
+<%= title = current_page.data.title if title.blank? %>
+
 <header>
+
+  <%#Check if it's the homepage %>
   <% if current_page.url == '/' %>
     <%= image_tag "/images/logo/logo-home.png", alt: "No Wifi Summercamp, camp de vacances en plein air" %>
     <p><%= current_page.data.slogan_sup %></p>
     <p><%= current_page.data.slogan %></p>
-    <h1><%= current_page.data.title %></h1>
+    <h1><%= title %></h1>
   <% else %>
-    <h1><%= current_page.data.title %></h1>
+    <h1><%= title %></h1>
   <% end %>
 </header>

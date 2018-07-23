@@ -1,0 +1,11 @@
+---
+hero_image: blog.jpg
+pageable : true
+per_page: 20
+---
+
+<div class="main">
+  <%= partial "partials/header", locals: {title: category} %>
+  <%= partial "partials/articles-list" %>
+  <%= partial "layouts/call-to-action" %>
+</div>

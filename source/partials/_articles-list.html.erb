@@ -1,0 +1,43 @@
+<% locals = current_resource.metadata[:locals] %>
+<% prev_page = locals['prev_page'] %>
+<% page_number = locals['page_number'] %>
+<% num_pages = locals['num_pages'] %>
+<% next_page = locals['next_page'] %>
+
+<p>
+  Catégories :
+</p>
+<ul>
+  <li> <%= link_to "La vie  au camp",      category_path("la-vie-au-camp") %> </li>
+  <li> <%= link_to "Activités",            category_path("activites") %></li>
+  <li> <%= link_to "Reportage photos",     category_path("reportage-photos") %></li>
+  <li> <%= link_to "Portrait de résident", category_path("portrait-de-resident") %></li>
+  <li> <%= link_to "Conseils",             category_path("conseils") %></li>
+  <li> <%= link_to "Lifehack",             category_path("lifehack") %></li>
+</ul>
+
+<ul>
+  <% page_articles.each_with_index do |article, i| %>
+    <li>
+      <h2><%= link_to article.title, article %></h2>
+      <p>' Publié le <%= I18n.l article.date, format: '%e %b %Y' %> ' par <%= article.data.author %></p>
+      <p><%= article.data.excerpt %></p>
+      <%= image_tag "/images/blog/thumbs/#{article.data.thumbnail}" %>
+    </li>
+  <% end %>
+</ul>
+
+<% if num_pages > 1 %>
+  <nav class="navigation">
+    <% if prev_page %>
+      <%= link_to '< Billets récents', prev_page %>
+    <% end %>
+    <span>
+      '  Page #{page_number}
+      '  sur #{num_pages}
+    </span>
+    <% if next_page %>
+      <%= link_to 'Billets anciens >', next_page %>
+    <% end %>
+  </nav>
+<% end %>

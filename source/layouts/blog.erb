@@ -1,0 +1,31 @@
+<% wrap_layout :layout do %>
+  <div class="main">
+    <%= partial "partials/header" %>
+
+    <aside>
+      <% author = find_author(current_article.data.author) %>
+      <%= image_tag "/images/members/thumbs/#{author.picture}" %>
+      <h3>find_author(current_article.data.author).name</h3>
+      <p>Publié le : <%= I18n.l current_page.date, format: '%e %b %Y' %></p>
+      <p>Dans : <%= current_article.data.category %></p>
+      <article>
+        <%= current_article.data.excerpt %>
+        <%= yield %>
+        <nav class="navigation">
+          <ul>
+            <li>
+              <% prev_article = current_article.previous_article %>
+              <% if prev_article %>
+                <%= link_to prev_article.title, prev_article.url, rel: 'prev', title: "Article précédent: #{prev_article.title}" %>
+              <% end %>
+            </li>
+            <li>
+              <% next_article = current_article.next_article %>
+              <%= link_to next_article.title, next_article.url, rel: 'next', title: "Article suivant: #{next_article.title}" %>
+            </li>
+          </ul>
+        </nav>
+      </article>
+    </aside>
+  </div>
+<% end %>
