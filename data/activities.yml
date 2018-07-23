@@ -3,11 +3,11 @@
   description: "Partez à la découverte de nos montagnes, nos vallées, nos rivières et nos lacs."
 
 - name: équitation
-  picture: équitation.jpg
+  picture: equitation.jpg
   description: "Apprenez à monter et partez en balade avec d’autres cavaliers."
 
 - name: canoé
-  picture: canoé.jpg
+  picture: canoe.jpg
   description: "Au calme sur les lacs ou en rivière, profitez de nos canoés et kayaks "
 
 - name: rafting

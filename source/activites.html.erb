@@ -1,0 +1,20 @@
+---
+title: "De nombreuses activités à partager sur le camp et aux alentours"
+title_seo: "Activités de plein air au No Wifi Summercamp dans les Pyrénées Ariégeoises"
+description: "Découvrez les nombreuses activités du camp : randonnée, équitation, canoé, rafting, lutherie, poterie, escalade..."
+hero_image: activites.jpg
+---
+
+<div class="main">
+  <%= partial "partials/header" %>
+
+  <ul>
+    <% data.activities.each do |activity| %>
+      <li>
+        <h2><%= activity.name %></h2>
+        <%= image_tag "/images/activities/#{activity.picture}" %>
+        <p><%= activity.description %></p>
+      </li>
+    <% end %>
+  </ul>
+</div>
