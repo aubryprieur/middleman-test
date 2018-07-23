@@ -14,6 +14,7 @@ gem 'font-awesome-sass'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
 
-gem 'better_errors'
-gem 'binding_of_caller'
-
+group :development, :test do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end

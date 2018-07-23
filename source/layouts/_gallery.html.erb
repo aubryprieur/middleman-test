@@ -1,11 +1,13 @@
-<div>
-  <ul>
-    <% gallery.each do |picture| %>
-      <li>
-        <% link_to "/images/galleries/#{picture}" do %>
-          <%= image_tag "/images/galleries/thumbs/#{picture}" %>
-        <% end %>
+<div class="gallery">
+  <div class="container">
+    <div class="row">
+      <% gallery.each do |picture| %>
+        <div class="col-lg-3 gallery-item">
+          <% link_to "/images/galleries/#{picture}" do %>
+            <%= image_tag "/images/galleries/thumbs/#{picture}" %>
+          <% end %>
+        </div>
       <% end %>
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>
