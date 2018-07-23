@@ -5,7 +5,7 @@
     <aside>
       <% author = find_author(current_article.data.author) %>
       <%= image_tag "/images/members/thumbs/#{author.picture}" %>
-      <h3>find_author(current_article.data.author).name</h3>
+      <h3><%= author.name %></h3>
       <p>Publié le : <%= I18n.l current_page.date, format: '%e %b %Y' %></p>
       <p>Dans : <%= current_article.data.category %></p>
       <article>
@@ -21,7 +21,9 @@
             </li>
             <li>
               <% next_article = current_article.next_article %>
-              <%= link_to next_article.title, next_article.url, rel: 'next', title: "Article suivant: #{next_article.title}" %>
+              <% if next_article %>
+                <%= link_to next_article.title, next_article.url, rel: 'next', title: "Article suivant: #{next_article.title}" %>
+              <% end %>
             </li>
           </ul>
         </nav>
