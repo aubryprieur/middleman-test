@@ -2,9 +2,9 @@
   <div class="container">
     <div class="row">
       <% gallery.each do |picture| %>
-        <div class="col-lg-3 gallery-item">
+        <div class="col-xs-6 col-md-3 gallery-item">
           <% link_to "/images/galleries/#{picture}" do %>
-            <%= image_tag "/images/galleries/thumbs/#{picture}" %>
+            <%= image_tag "/images/galleries/thumbs/#{picture}", class:"img-responsive" %>
           <% end %>
         </div>
       <% end %>
