@@ -1,3 +1,27 @@
 // Import page-specific CSS files here.
 @import "home";
 @import "about";
+
+.wrapper-intro {
+  padding: 2em 0;
+  background-color: #D5DFD3 !important; // Set a color if no image
+  background: url(/images/backgrounds/background-intro.jpg); //default-image
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+  h2 {
+  color: #a27d2d;
+  font-weight: bold;
+  }
+  p {
+  color: #48686c;
+  }
+  #trait {
+    border-bottom: solid;
+    width: 90px;
+    border-width: 5px;
+    margin: 0 auto 10px auto;
+    color: #a27d2d;
+  }
+}
+
