@@ -32,19 +32,6 @@ slogan_sup: "Déconnectez vos téléphones, tablettes et ordinateurs"
   <%= partial "layouts/gallery", locals: {gallery: data.galleries.homepage} %>
 
   <h2>Ils ont adoré leur séjour !</h2>
-  <ul>
-    <% data.testimonials.each do |testimonial| %>
-      <li>
-        <%= image_tag "/images/testimonials/#{testimonial.picture}" %>
-        <p>
-          <span><%= testimonial.name  %></span>
-          ' ,
-          <span><%= testimonial.age  %></span>
-           ' ,
-          <span><%= testimonial.town %></span>
-        </p>
-        <p><%= testimonial.message %></p>
-      </li>
-    <% end %>
-  </ul>
+  <%= partial "layouts/cards-testimonials" %>
+
 </div>
