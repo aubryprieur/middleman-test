@@ -1,0 +1,29 @@
+.wrapper {
+  padding: 6em 0;
+  background-color: #D5DFD3 !important; // Set a color if no image
+  background: url(/images/backgrounds/vallee-ariege.jpg); //default-image
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+}
+
+.header-slogan {
+  color: white;
+}
+
+.header-title {
+  color: white;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.header-infos {
+  margin-top: em(48,18);
+  color:       #BBAC8B;
+  font-size:   45px;
+  font-weight: 400;
+  text-shadow: 2px 2px 10px black;
+}
+
+.header-logo {
+  margin-bottom: 20px;
+}
