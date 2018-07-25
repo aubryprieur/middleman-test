@@ -16,12 +16,22 @@
   p {
   color: #48686c;
   }
-  #trait {
-    border-bottom: solid;
-    width: 90px;
-    border-width: 5px;
-    margin: 0 auto 10px auto;
-    color: #a27d2d;
-  }
 }
 
+.trait {
+  border-bottom: solid;
+  width: 90px;
+  border-width: 5px;
+  margin: 0 auto 10px auto;
+  color: #a27d2d;
+}
+
+.presentation {
+  h3 {
+  color: #a27d2d;
+  font-weight: bold;
+  }
+  p {
+  color: #48686c;
+  }
+}
