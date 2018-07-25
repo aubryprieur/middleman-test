@@ -1,5 +1,5 @@
 <%# Set the title %>
-<%= title = current_page.data.title if title.blank? %>
+<% title = current_page.data.title if title.blank? %>
 
 <header class="text-center">
   <%#Check if it's the homepage %>
@@ -13,7 +13,7 @@
       </div>
     </div>
   <% else %>
-  <div class="wrappera">
+  <div class="wrapper">
     <h1 class="header-title"><%= title %></h1>
   </div>
   <% end %>

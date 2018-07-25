@@ -2,6 +2,7 @@
   padding: 6em 0;
   background-color: #D5DFD3 !important; // Set a color if no image
   background: url(/images/backgrounds/vallee-ariege.jpg); //default-image
+  height: calc(100vh - 70px);
   background-size: cover;
   background-position: center bottom;
   text-align: center;
