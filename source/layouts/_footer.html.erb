@@ -1,26 +1,30 @@
 <footer>
-  <div>
-    <%= image_tag "/images/logo/logo2.png", alt: "No Wifi Summercamp" %>
-  </div>
-  <div class="content-info">
-    <p><%= data.settings.author.address %></p>
-    <p>Tel : <%= data.settings.author.phone %></p>
-    <p>Mail : <%= data.settings.author.email %></p>
-    <p>Suivez vous sur <%= link_to "Facebook", data.settings.social.facebook %></p>
-    <p>et sur <%= link_to "Twitter", data.settings.social.twitter %></p>
-  </div>
-
-  <nav class="navigation">
-    <ul>
-      <li><%=link_to "Accueil", "/" %></li>
-      <li><%=link_to "Camp", "/camp.html" %></li>
-      <li><%=link_to "Equipe", "/equipe.html" %></li>
-      <li><%=link_to "Activités", "/activites.html"%></li>
-      <li><%=link_to "Blog", "/blog.html" %></li>
-      <li><%=link_to "Réservation", "/reservation.html" %></li>
-      <li><%=link_to "Mentions légales", "/mentions-legales.html" %></li>
-      <li><%=link_to "Conditions générales de vente", "/cgv.html" %></li>
+  <div class="wrapper-footer">
+    <div class="footer-logo">
+      <%= image_tag "/images/logo/logo2.png", alt: "No Wifi Summercamp" %>
+    </div>
+    <ul class="footer-content">
+      <li class="footer-content-item"><%= data.settings.author.address %></li>
+      <li class="footer-content-item">Tel : <%= data.settings.author.phone %></li>
+      <li class="footer-content-item">Mail : <%= data.settings.author.email %></li>
+      <li class="footer-content-item">Suivez vous sur <%= link_to "Facebook", data.settings.social.facebook %> et sur <%= link_to "Twitter", data.settings.social.twitter %></li>
     </ul>
-  </nav>
-  <p><%= Time.now.year %></p> ' <%= link_to data.settings.author.name, "/" %> ' - Design et développement : <%= link_to data.settings.copyright.developer.name, data.settings.copyright.developer.url %>
+
+    <nav class="footer-menu">
+      <ul>
+        <li class="footer-menu-item"><%=link_to "Accueil", "/", class: "footer-menu-link" %></li>
+        <li class="footer-menu-item"><%=link_to "Camp", "/camp.html", class: "footer-menu-link"  %></li>
+        <li class="footer-menu-item"><%=link_to "Equipe", "/equipe.html", class: "footer-menu-link"  %></li>
+        <li class="footer-menu-item"><%=link_to "Activités", "/activites.html", class: "footer-menu-link" %></li>
+        <li class="footer-menu-item"><%=link_to "Blog", "/blog.html", class: "footer-menu-link"  %></li>
+        <li class="footer-menu-item"><%=link_to "Réservation", "/reservation.html", class: "footer-menu-link"  %></li>
+        <li class="footer-menu-item"><%=link_to "Mentions légales", "/mentions-legales.html", class: "footer-menu-link"  %></li>
+        <li class="footer-menu-item"><%=link_to "Conditions générales de vente", "/cgv.html", class: "footer-menu-link"  %></li>
+      </ul>
+    </nav>
+    <div class="footer-copyright">
+      <p><%= Time.now.year %></p> '
+      <%= link_to data.settings.author.name, "/" %> ' - Design et développement : <%= link_to data.settings.copyright.developer.name, data.settings.copyright.developer.url %>
+    </div>
+  </div>
 </footer>
