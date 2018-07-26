@@ -27,6 +27,7 @@
 }
 
 .presentation {
+  margin-bottom: 50px;
   h3 {
   color: #a27d2d;
   font-weight: bold;
@@ -34,4 +35,23 @@
   p {
   color: #48686c;
   }
+  .presentation-message{
+    padding: 0 6px;
+    margin-top: 10px;
+  }
+}
+
+.btn-presentation {
+  border: solid;
+  border-width: 1.5px;
+  border-color: #a27d2d;
+  border-radius: 8px;
+  padding: 9px 18px;
+  color: #a27d2d;
+}
+
+.btn-presentation:hover {
+  border-color: #a27d2d;
+  background-color: #a27d2d;
+  color: white;
 }
