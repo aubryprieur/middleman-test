@@ -1,23 +1,25 @@
-<div class="container">
-  <h2 class="text-center">Ils ont adoré leur séjour !</h2>
-  <div class="trait"></div>
-  <div class="row">
-    <% data.testimonials.each do |testimonial| %>
-      <div class="col-xs-12 col-md-6 card-testimonial">
-        <div class="col-xs-4 col-md-3">
-          <%= image_tag "/images/testimonials/#{testimonial.picture}", class:"img-responsive img-testimonial" %>
+<div class="wrapper-testimonial">
+  <div class="container">
+    <h2 class="text-center">Ils ont adoré leur séjour !</h2>
+    <div class="trait"></div>
+    <div class="row">
+      <% data.testimonials.each do |testimonial| %>
+        <div class="col-xs-12 col-md-6 card-testimonial">
+          <div class="col-xs-4 col-md-3">
+            <%= image_tag "/images/testimonials/#{testimonial.picture}", class:"img-responsive img-testimonial" %>
+          </div>
+          <div class="col-xs-8 col-md-9">
+            <p>
+              <span class="testimonial-name"><%= testimonial.name  %></span>
+              ,
+              <span class="testimonial-info"><%= testimonial.age  %></span>
+               ,
+              <span class="testimonial-info"><%= testimonial.town %></span>
+            </p>
+            <div class="testimonial-message">" <%= testimonial.message %> "</div>
+          </div>
         </div>
-        <div class="col-xs-8 col-md-9">
-          <p>
-            <span class="testimonial-name"><%= testimonial.name  %></span>
-            ,
-            <span class="testimonial-info"><%= testimonial.age  %></span>
-             ,
-            <span class="testimonial-info"><%= testimonial.town %></span>
-          </p>
-          <div class="testimonial-message">" <%= testimonial.message %> "</div>
-        </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>

@@ -25,32 +25,34 @@ slogan_sup: "Déconnectez vos téléphones, tablettes et ordinateurs"
     </div>
   </div>
 
-<div class="container text-center presentation">
-  <div class="row">
-    <div class="col-xs-12 col-md-4">
-      <h3>Le camp</h3>
-      <div class="trait"></div>
-      <%= image_tag "/images/pages/accueil/camp.jpg", class: "img-testimonial" %>
-      <p class="presentation-message" >Situé aux abords du parc naturel régional des Pyrénées Ariégeoises, à proximité de lacs, de rivières et de nombreux départ de randonnées, le camp vous accueille d’avril à octobre  pour la durée que vous souhaitez.</p>
-      <%= link_to "Découvrir le camp", "/camp.html", class: "btn btn-presentation" %>
-    </div>
-    <div class="col-xs-12 col-md-4">
-      <h3>L'équipe</h3>
-      <div class="trait"></div>
-      <%= image_tag "/images/pages/accueil/equipe.jpg", class: "img-testimonial" %>
-      <p class="presentation-message" >Notre équipe, constituée de personnes venant de tout horizon est là pour vous accompagner dans les activités, vous transmettre leur savoir-faire et vous divertir autour des nombreux feux de camps</p>
-      <%= link_to "Découvrir l'équipe", "/equipe.html", class: "btn btn-presentation"  %>
-    </div>
-    <div class="col-xs-12 col-md-4">
-      <h3>Les activités</h3>
-      <div class="trait"></div>
-      <%= image_tag "/images/pages/accueil/activites.jpg", class: "img-testimonial" %>
-      <p class="presentation-message" >Pas le temps de vous ennuyer, il y a de quoi faire sur le camp ! Activités nautiques, sports en plein air,  randonnées, atelier de fabrication ou restauration d’objets, apprentissage de la permaculture.</p>
-      <%= link_to "Découvrir les activités", "/activites.html", class: "btn btn-presentation"  %>
+<Div class="wrapper-presentation">
+  <div class="container text-center presentation">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <h3>Le camp</h3>
+        <div class="trait"></div>
+        <%= image_tag "/images/pages/accueil/camp.jpg", class: "img-testimonial" %>
+        <p class="presentation-message" >Situé aux abords du parc naturel régional des Pyrénées Ariégeoises, à proximité de lacs, de rivières et de nombreux départ de randonnées, le camp vous accueille d’avril à octobre  pour la durée que vous souhaitez.</p>
+        <%= link_to "Découvrir le camp", "/camp.html", class: "btn btn-presentation" %>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h3>L'équipe</h3>
+        <div class="trait"></div>
+        <%= image_tag "/images/pages/accueil/equipe.jpg", class: "img-testimonial" %>
+        <p class="presentation-message" >Notre équipe, constituée de personnes venant de tout horizon est là pour vous accompagner dans les activités, vous transmettre leur savoir-faire et vous divertir autour des nombreux feux de camps</p>
+        <%= link_to "Découvrir l'équipe", "/equipe.html", class: "btn btn-presentation"  %>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h3>Les activités</h3>
+        <div class="trait"></div>
+        <%= image_tag "/images/pages/accueil/activites.jpg", class: "img-testimonial" %>
+        <p class="presentation-message" >Pas le temps de vous ennuyer, il y a de quoi faire sur le camp ! Activités nautiques, sports en plein air,  randonnées, atelier de fabrication ou restauration d’objets, apprentissage de la permaculture.</p>
+        <%= link_to "Découvrir les activités", "/activites.html", class: "btn btn-presentation"  %>
+      </div>
     </div>
   </div>
-</div>
-
+</Div>
+  <%= partial "layouts/gallery", locals: { gallery: data.galleries.homepage} %>
   <%= partial "layouts/cards-testimonials" %>
 
 </div>

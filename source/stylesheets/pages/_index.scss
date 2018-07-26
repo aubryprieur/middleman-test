@@ -18,6 +18,15 @@
   }
 }
 
+.wrapper-presentation {
+  padding: 2em 0;
+  background-color: #D5DFD3 !important; // Set a color if no image
+  background: url(/images/backgrounds/texture-dirt.jpg); //default-image
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+}
+
 .trait {
   border-bottom: solid;
   width: 90px;

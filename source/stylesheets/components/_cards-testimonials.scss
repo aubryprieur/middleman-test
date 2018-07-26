@@ -36,3 +36,12 @@ h2 {
   color: #a27d2d;
   font-weight: bold;
 }
+
+.wrapper-testimonial {
+  padding: 3em 0;
+  background-color: #D5DFD3 !important; // Set a color if no image
+  background: url(/images/backgrounds/texture-dirt.jpg); //default-image
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+}
