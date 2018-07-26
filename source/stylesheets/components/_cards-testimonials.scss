@@ -1,5 +1,8 @@
 .card-testimonial {
   margin-bottom: 15px;
+  padding: 1.5em 0 1.5em 0;
+  text-align: center;
+  border-bottom: 1px solid #E5E5E5;
   p {
     font-size: 10px;
   }
@@ -27,4 +30,9 @@
 .testimonial-message {
   font-size: 80%;
   color: #48686c;
+}
+
+h2 {
+  color: #a27d2d;
+  font-weight: bold;
 }
