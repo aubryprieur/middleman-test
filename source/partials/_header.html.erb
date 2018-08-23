@@ -4,7 +4,7 @@
 <header class="text-center">
   <%#Check if it's the homepage %>
   <% if current_page.url == '/' %>
-    <div class="wrapper">
+    <div class="wrapper-home-page" style="background-image: url('images/backgrounds/<%= current_page.data.hero_image %>');">
       <%= image_tag "/images/logo/logo-home.png", srcset: "/images/logo/logo-home.png 1x, /images/logo/logo-home@2x.png 2x", class: "header-logo", alt: "No Wifi Summercamp, camp de vacances en plein air" %>
       <div class="header-content">
         <h1 class="header-infos"><%= title %></h1>
@@ -13,8 +13,8 @@
       </div>
     </div>
   <% else %>
-  <div class="wrapper">
-    <h1 class="header-title"><%= title %></h1>
+  <div class="wrapper" style="background-image: url('images/backgrounds/<%= current_page.data.hero_image %>');">
+    <h1 class="header-title-2"><%= title %></h1>
   </div>
   <% end %>
 </header>

@@ -1,6 +1,7 @@
 // Import page-specific CSS files here.
 @import "home";
 @import "about";
+@import "camp";
 
 .wrapper-intro {
   padding: 2em 0;
@@ -44,7 +45,7 @@
   p {
   color: #48686c;
   }
-  .presentation-message{
+  .presentation-message {
     padding: 0 6px;
     margin-top: 10px;
   }

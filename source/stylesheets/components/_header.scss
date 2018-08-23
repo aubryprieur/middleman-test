@@ -1,7 +1,6 @@
-.wrapper {
+.wrapper-home-page {
   padding: 6em 0;
   background-color: #D5DFD3 !important; // Set a color if no image
-  background: url(/images/backgrounds/vallee-ariege.jpg); //default-image
   height: calc(100vh - 70px);
   background-size: cover;
   background-position: center bottom;
@@ -23,7 +22,6 @@
   margin-top: em(48,18);
   color:       #BBAC8B;
   font-size:   30px;
-
   font-weight: bold;
   text-shadow: 2px 2px 10px black;
   padding: 0 20px 0 20px;
@@ -31,4 +29,20 @@
 
 .header-logo {
   margin-bottom: 20px;
+}
+
+.wrapper {
+  padding: 6em 0;
+  background-color: #D5DFD3 !important; // Set a color if no image
+  height: 50vh;
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+}
+
+.header-title-2 {
+  color: white;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+  font-size:   3em;
+  font-weight: bold;
 }

@@ -7,18 +7,36 @@ hero_image: vallee-ariege.jpg
 
 <div class="main">
   <%= partial "partials/header" %>
-
-  <h2>Un cadre privilégié</h2>
-  <p>Situé sur la commune de Rimont, en Ariège, il faut s’éloigner un peu des routes et des villages pour trouver le camp. Suffisamment proche pour accéder aux activités hors camp et aux commerces mais suffisamment éloigné pour garantir calme et dépaysement.</p>
-  <p>Toute la saison et en fonction des conditions météo, nous proposons des départs randonnées en montagne, à la journée ou en bivouac, des descentes de rivière en canoé ou de l’équitation avec les chevaux du camp.</p>
-  <p>Nous essayons de tendre vers l’autonomie énergétique et alimentaire, les résidents sont encouragés à prendre part à la production d’énergie et à l’entretien de nos jardins en permaculture.</p>
-  <%= image_tag "/images/pages/camp/tente-bivouac.jpg" %>
-
-  <h2>Dedans ou dehors</h2>
-  <p>Nous vous proposons différents types d’hébergements, à vous de choisir en fonction de vos envies. Le terrain est vaste et vous trouverez certainement un endroit à l’ombre avec un joli panorama pour planter votre tente.</p>
-  <p>Vous pouvez également profitez de nos dortoirs de 6 ou 8 personnes dans le bâtiment principal ou si vous avez besoin de plus d’intimité de nos roulottes ou de nos yourtes.</p>
-  <p>Au cœur de camp, et proche du bâtiment principal se trouvent la plupart des ateliers auxquels vous pouvez participer. C’est aussi à cet endroit qu’ont lieu les repas en extérieur sous le grand préau ainsi que les veillées nocturnes quotidiennes autour du feu.</p>
-  <%= image_tag "/images/pages/camp/tente-yourte.jpg" %>
+<div class="wrapper-presentation">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 content-camp">
+        <div class="col-xs-12 col-md-6">
+          <h2>Un cadre privilégié</h2>
+          <div class="trait"></div>
+          <p>Situé sur la commune de Rimont, en Ariège, il faut s’éloigner un peu des routes et des villages pour trouver le camp. Suffisamment proche pour accéder aux activités hors camp et aux commerces mais suffisamment éloigné pour garantir calme et dépaysement.</p>
+          <p>Toute la saison et en fonction des conditions météo, nous proposons des départs randonnées en montagne, à la journée ou en bivouac, des descentes de rivière en canoé ou de l’équitation avec les chevaux du camp.</p>
+          <p>Nous essayons de tendre vers l’autonomie énergétique et alimentaire, les résidents sont encouragés à prendre part à la production d’énergie et à l’entretien de nos jardins en permaculture.</p>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag "/images/pages/camp/tente-bivouac.jpg", class: "img-camp"  %>
+        </div>
+      </div>
+      <div class="col-xs-12 content-camp">
+        <div class="col-xs-12 col-md-6">
+          <%= image_tag "/images/pages/camp/tente-yourte.jpg", class: "img-camp" %>
+        </div>
+        <div class="col-xs-12 col-md-6 description-camp">
+          <h2>Dedans ou dehors</h2>
+          <div class="trait"></div>
+          <p>Nous vous proposons différents types d’hébergements, à vous de choisir en fonction de vos envies. Le terrain est vaste et vous trouverez certainement un endroit à l’ombre avec un joli panorama pour planter votre tente.</p>
+          <p>Vous pouvez également profitez de nos dortoirs de 6 ou 8 personnes dans le bâtiment principal ou si vous avez besoin de plus d’intimité de nos roulottes ou de nos yourtes.</p>
+          <p>Au cœur de camp, et proche du bâtiment principal se trouvent la plupart des ateliers auxquels vous pouvez participer. C’est aussi à cet endroit qu’ont lieu les repas en extérieur sous le grand préau ainsi que les veillées nocturnes quotidiennes autour du feu.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <%= partial "layouts/gallery", locals: {gallery: data.galleries.camp} %>
 
