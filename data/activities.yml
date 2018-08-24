@@ -1,59 +1,59 @@
-- name: randonnée
+- name: Randonnée
   picture: randonnee.jpg
   description: "Partez à la découverte de nos montagnes, nos vallées, nos rivières et nos lacs."
 
-- name: équitation
+- name: Équitation
   picture: equitation.jpg
   description: "Apprenez à monter et partez en balade avec d’autres cavaliers."
 
-- name: canoé
+- name: Canoé
   picture: canoe.jpg
   description: "Au calme sur les lacs ou en rivière, profitez de nos canoés et kayaks "
 
-- name: rafting
+- name: Rafting
   picture: rafting.jpg
   description: "Embarquez avec les plus téméraires pour une descente de rivière sportive"
 
-- name: lutherie
+- name: Lutherie
   picture: lutherie.jpg
   description: "Fabriquez vous même votre instrument à cordes et jouez lors des feux de camps "
 
-- name: construction
+- name: Construction
   picture: construction.jpg
   description: "Apprenez les bases de la construction éco responsable et pratiquez."
 
-- name: poterie
+- name: Poterie
   picture: poterie.jpg
   description: "Fabriquez pots, vaisselle et récipients qui serviront à tous sur le camp"
 
-- name: peinture
+- name: Peinture
   picture: peinture.jpg
   description: "Donnez libre court à votre inspiration et votre créativité lors de cours collectif."
 
-- name: sculpture
+- name: Sculpture
   picture: sculpture.jpg
   description: "A partir de bois, de craie ou d’argile, apprenez à sculpter des objets."
 
-- name: escalade
+- name: Escalade
   picture: escalade.jpg
   description: "Accompagné d’un moniteur, tentez de gravir les sommets"
 
-- name: "tir à l'arc"
+- name: Tir à l'arc
   picture: tir-a-l-arc.jpg
   description: "Saurez-vous viser juste à une bonne centaine de mètres. "
 
-- name: permaculture
+- name: Permaculture
   picture: permaculture.jpg
   description: "Découvrez les bases de la permaculture, aidez nous sur le camp."
 
-- name: vélo custom
+- name: Vélo custom
   picture: velo-custom.jpg
   description: "Customisez les vélos que nous récupérons pour leur donner une nouvelle vie"
 
-- name: pêche
+- name: Pêche
   picture: peche.jpg
   description: "Posez vos cannes au bord d’une rivère et attendez que ça morde."
 
-- name: baignade
+- name: Baignade
   picture: baignade.jpg
   description: "Profitez des lacs et nombreuses rivères pour vous rafraichir."

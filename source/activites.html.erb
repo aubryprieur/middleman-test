@@ -8,13 +8,19 @@ hero_image: vtt.jpg
 <div class="main">
   <%= partial "partials/header" %>
 
-  <ul>
-    <% data.activities.each do |activity| %>
-      <li>
-        <h2><%= activity.name %></h2>
-        <%= image_tag "/images/activities/#{activity.picture}" %>
-        <p><%= activity.description %></p>
-      </li>
-    <% end %>
-  </ul>
+  <div class="wrapper-activites">
+    <div class="container">
+      <div class="row">
+        <% data.activities.each do |activity| %>
+          <div class="col-xs-12 col-md-6 col-lg-4 activites-card text-center">
+            <h2><%= activity.name %></h2>
+            <div class="trait-activites"></div>
+            <%= image_tag "/images/activities/#{activity.picture}", class: "img-activites" %>
+            <p><%= activity.description %></p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
 </div>

@@ -1,0 +1,16 @@
+p {
+  font-size: 16px;
+}
+
+.team-card {
+  padding: 0 1.5em;
+}
+
+.wrapper-team {
+  background-color: #F5F5F5 !important; // Set a color if no image
+  background: url(/images/backgrounds/texture-dirt.jpg); //default-image
+  background-repeat: repeat-x;
+  // background-size: cover;
+  // background-position: center bottom;
+}
+

@@ -4,28 +4,33 @@
 <% num_pages = locals['num_pages'] %>
 <% next_page = locals['next_page'] %>
 
-<p>
-  Catégories :
-</p>
-<ul>
-  <li> <%= link_to "La vie  au camp",      category_path("la-vie-au-camp") %> </li>
-  <li> <%= link_to "Activités",            category_path("activites") %></li>
-  <li> <%= link_to "Reportage photos",     category_path("reportage-photos") %></li>
-  <li> <%= link_to "Portrait de résident", category_path("portrait-de-resident") %></li>
-  <li> <%= link_to "Conseils",             category_path("conseils") %></li>
-  <li> <%= link_to "Lifehack",             category_path("lifehack") %></li>
-</ul>
+<div class="container">
+  <div class="navbar-categories">
+    <span>Catégories : </span>
+    <%= link_to "La vie  au camp",      category_path("la-vie-au-camp") %> /
+    <%= link_to "Activités",            category_path("activites") %> /
+    <%= link_to "Reportage photos",     category_path("reportage-photos") %> /
+    <%= link_to "Portrait de résident", category_path("portrait-de-resident") %> /
+    <%= link_to "Conseils",             category_path("conseils") %> /
+    <%= link_to "Lifehack",             category_path("lifehack") %>
+  </div>
 
-<ul>
-  <% page_articles.each_with_index do |article, i| %>
-    <li>
-      <h2><%= link_to article.title, article %></h2>
-      <p>' Publié le <%= I18n.l article.date, format: '%e %b %Y' %> ' par <%= article.data.author %></p>
-      <p><%= article.data.excerpt %></p>
-      <%= image_tag "/images/blog/thumbs/#{article.data.thumbnail}" %>
-    </li>
-  <% end %>
-</ul>
+  <div class="row">
+    <% page_articles.each_with_index do |article, i| %>
+      <div class="article">
+        <div class="col-xs-12 col-md-2">
+          <%= image_tag "/images/blog/thumbs/#{article.data.thumbnail}", class: "img-center" %>
+        </div>
+        <div class="col-xs-12 col-md-10 content-article">
+          <h2><%= link_to article.title, article %></h2>
+          <p class="meta-article">' Publié le <%= I18n.l article.date, format: '%e %b %Y' %> ' par <%= article.data.author %></p>
+          <p><%= article.data.excerpt %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>
 
 <% if num_pages > 1 %>
   <nav class="navigation">

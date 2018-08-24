@@ -39,9 +39,10 @@ h2 {
 
 .wrapper-testimonial {
   padding: 3em 0;
-  background-color: #D5DFD3 !important; // Set a color if no image
+  background-color: #F5F5F5 !important; // Set a color if no image
   background: url(/images/backgrounds/texture-dirt.jpg); //default-image
-  background-size: cover;
-  background-position: center bottom;
+  // background-size: cover;
+  // background-position: center bottom;
+  background-repeat: repeat-x;
   text-align: center;
 }

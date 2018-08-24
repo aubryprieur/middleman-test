@@ -2,10 +2,12 @@
 @import "home";
 @import "about";
 @import "camp";
+@import "equipe";
+@import "activites";
 
 .wrapper-intro {
   padding: 2em 0;
-  background-color: #D5DFD3 !important; // Set a color if no image
+  background-color: #F5F5F5 !important; // Set a color if no image
   background: url(/images/backgrounds/background-intro.jpg); //default-image
   background-size: cover;
   background-position: center bottom;
@@ -21,10 +23,11 @@
 
 .wrapper-presentation {
   padding: 2em 0;
-  background-color: #D5DFD3 !important; // Set a color if no image
+  background-color: #F5F5F5 !important; // Set a color if no image
   background: url(/images/backgrounds/texture-dirt.jpg); //default-image
-  background-size: cover;
-  background-position: center bottom;
+  background-repeat: repeat-x;
+  // background-size: cover;
+  // background-position: center bottom;
   text-align: center;
 }
 
