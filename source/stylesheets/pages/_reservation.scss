@@ -1,0 +1,42 @@
+.reservation-intro {
+  margin-top: 50px;
+  padding: 0 100px;
+}
+
+.wrapper-reservation {
+  background-color: #F5F5F5 !important; // Set a color if no image
+  background: url(/images/backgrounds/texture-dirt.jpg); //default-image
+  background-repeat: no-repeat;
+}
+
+.btn-reservation {
+  border: solid;
+  border-width: 1.5px;
+  border-color: #a27d2d;
+  border-radius: 8px;
+  padding: 9px 18px;
+  color: #a27d2d;
+}
+
+.btn-reservation:hover {
+  border-color: #a27d2d;
+  background-color: #a27d2d;
+  color: white;
+}
+
+label {
+  color: #a27d2d;
+}
+
+.imput-radius {
+  border-radius: 10px;
+}
+
+.text-area {
+  height: 12em;
+  resize: vertical;
+}
+
+.reservation-form {
+  padding: 0 100px;
+}

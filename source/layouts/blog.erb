@@ -4,17 +4,20 @@
 
     <aside>
       <% author = find_author(current_article.data.author) %>
-      <div class="container">
+      <div class="container blog">
         <div class="row">
-          <div class="col-xs-12 col-md-2">
+          <div class="col-xs-12 col-md-2 text-center article-info">
             <%= image_tag "/images/members/thumbs/#{author.picture}", class: "img-author-blog" %>
-            <h3><%= author.name %></h3>
-            <p>Publié le : <%= I18n.l current_page.date, format: '%e %b %Y' %></p>
-            <p>Dans : <%= current_article.data.category %></p>
+            <h3 class="blog-author"><%= author.name %></h3>
+            <div class="trait-blog"></div>
+            <p><span>Publié le :</span> <%= I18n.l current_page.date, format: '%e %b %Y' %></p>
+            <p><span>Dans : </span> <%= current_article.data.category %></p>
           </div>
           <div class="col-xs-12 col-md-10">
             <article>
-              <%= current_article.data.excerpt %>
+              <div class="blog-intro">
+                <%= current_article.data.excerpt %>
+              </div>
               <%= yield %>
               <nav class="navigation">
                 <ul>

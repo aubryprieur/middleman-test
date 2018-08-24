@@ -1,3 +1,36 @@
 .img-author-blog {
   border-radius: 50%;
+  margin: 5px 0;
+}
+
+.trait-blog {
+  border-bottom: solid;
+  width: 90px;
+  border-width: 5px;
+  margin: 0 auto 10px auto;
+  color: #a27d2d;
+}
+
+.blog-intro {
+  font-size: 20px;
+  color: #48686c;
+  font-style: italic;
+}
+
+.blog {
+  margin-top: 40px;
+  h2 {
+    text-align: left;
+  }
+}
+
+.blog-author {
+  color: #a27d2d;
+  font-weight: bold;
+}
+
+.article-info {
+  span {
+    color: #a27d2d;
+  }
 }

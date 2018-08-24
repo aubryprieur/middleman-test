@@ -7,30 +7,37 @@ hero_image: randonneurs.jpg
 
 <div class="main">
   <%= partial "partials/header" %>
+  <div class="wrapper-reservation">
+    <div class="container">
+      <div class="text-center reservation-intro">
+        <p>Pour réserver votre séjour, c’est très simple, remplissez le  formulaire ci dessous et nous vous enverrons rapidement une documentation avec les tarifs et les disponibilités.</p>
+        <p>Vous pouvez également nous joindre par téléphone au 02 86 54 96 30</p>
+      </div>
+      <div class="form-group reservation-form">
+        <% form_tag "https://getsimpleform.com/messages?form_api_token=4d66b3f5af37ce1fe465a5c20fe31dd5", method: "post" do %>
+          <input type="hidden" name="redirect_to" value="http://nowifisummercamp.github.io/merci.html">
+          <% field_set_tag do %>
+            <p>
+              <%= label_tag :nom %>
+              <%= text_field_tag :nom, placeholder: "Dujardin", class: "form-control imput-radius" %>
+            </p>
+            <p>
+              <%= label_tag :email %>
+              <%= text_field_tag :email, placeholder: "pierredujardin@monemail.fr", class: "form-control imput-radius"  %>
+            </p>
+            <p>
+              <%= label_tag :téléphone %>
+              <%= text_field_tag :telephone, placeholder: "06 12 34 56 78", class: "form-control imput-radius"  %>
+            </p>
+            <p>
+              <%= label_tag :message %>
+              <%= text_field_tag :message, placeholder: "Quelques lignes pour nous demander ce que vous voulez.", class: "form-control imput-radius text-area"  %>
+            </p>
+            <%= submit_tag "envoyer mon message", class: "btn btn-reservation" %>
+          <% end %>
+        <% end %>
+      </div>
 
-  <p>Pour réserver votre séjour, c’est très simple, remplissez le  formulaire ci dessous et nous vous enverrons rapidement une documentation avec les tarifs et les disponibilités.</p>
-  <p>Vous pouvez également nous joindre par téléphone au 02 86 54 96 30</p>
-
-  <% form_tag "https://getsimpleform.com/messages?form_api_token=4d66b3f5af37ce1fe465a5c20fe31dd5", method: "post" do %>
-    <input type="hidden" name="redirect_to" value="http://nowifisummercamp.github.io/merci.html">
-    <% field_set_tag do %>
-      <p>
-        <%= label_tag :nom %>
-        <%= text_field_tag :nom, placeholder: "Dujardin" %>
-      </p>
-      <p>
-        <%= label_tag :prénom %>
-        <%= text_field_tag :email, placeholder: "pierredujardin@monemail.fr" %>
-      </p>
-      <p>
-        <%= label_tag :téléphone %>
-        <%= text_field_tag :telephone, placeholder: "06 12 34 56 78" %>
-      </p>
-      <p>
-        <%= label_tag :message %>
-        <%= text_field_tag :message, placeholder: "Quelques lignes pour nous demander ce que vous voulez." %>
-      </p>
-      <%= submit_tag "envoyer mon message" %>
-    <% end %>
-  <% end %>
+    </div>
+  </div>
 </div>
